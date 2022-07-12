@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +5,10 @@
     list-style: none;
     /* font-family: 'Roboto', sans-serif;
     background-color: #70c6c7;*/
+}
+
+body{
+    background-color:#70c6c7;
 }
 
 .resume-contents {
@@ -26,7 +28,7 @@
 .right-section {
     grid-column: span 5;
     height: 100%;
-    background-color: #424a50;
+    background-color: #4B6982;
     border-radius: 0px 60px 0px 0px;
 }
 
@@ -36,14 +38,14 @@
 
 .profile {
     width: 100%;
-    border-bottom: 2px solid #eeeeee;
-    padding-bottom: 1.5rem;
-
+    border-bottom: 2px solid #1B2631;
+    /*padding-bottom: 1.5rem;*/
 }
 
 .profile .profile-image {
     width: 100%;
-    border-radius: 100%;
+    border-radius: 50%;
+    border: 8px solid #1b2631;
 }
 
 .name {
@@ -52,7 +54,8 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 1.5rem;
+    font-weight:bold;
+    padding: 1rem 0;
 }
 
 .profession {
@@ -60,7 +63,10 @@
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    /*padding-top: 1.5rem;*/
 }
 
 /* .contact-info { border-bottom: 2px solid #1B2631;} */
@@ -68,29 +74,38 @@
 .left-title {
     color: #FDB44B;
     font-size: 20px;
-    padding-left: 20px;
-    padding-top: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+/*    padding-left: 20px;*/
+    padding-top: 3rem;
 }
 
 .contact-info ul {
     padding-top: 1.5rem;
-    list-style: none;
-    color: #eeeeee;
+   /* list-style: none;
+    color: #eeeeee; */
 }
 
 .contact-info ul li,
 .references ul li {
     padding: .4rem 0;
-    color: #D6DBDF;
-    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+    color: #D6DBDFaf;
+    letter-spacing: 1px;
+    font-size: 18px;
+    /*padding-left: 1.5rem;*/
 }
 
 .contact-info ul li i,
 .references ul li i {
-    padding: .1rem 0;
-    padding-right: 1rem;
+    padding-right: 1rem;    
     font-size: 18px;
-    color: #D6DBDF;
+    color: #2E86C1;
+    /*padding: .1rem 0;*/
 }
 
 .skills ul {
@@ -98,9 +113,31 @@
 }
 
 .skills ul li p {
-    padding: .1rem 0;
-    padding-left: 1.5rem;
-    color: #eeeeee;
+    padding: 4rem 0;
+    color: #d6dbdfaf;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    /*padding-left: 1.5rem;*/
+    
+}
+.referance-name{
+    padding-top: 1.5rem;
+    padding-bottom: .4rem;
+    font-size: 18px;
+    color:#F9E79F;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.referance-profession{
+    font-size: 16px;
+    color: #d6dbdfaf;
+    letter-spacing: 1px;
+    /* text-transform: uppercase; */
+    padding-bottom: .4rem;
 }
 
 .right-section-contents {
@@ -110,7 +147,14 @@
 .right-title {
     color: #70C6C7;
     font-size: 40px;
-    padding-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items:center;
+    padding: 2rem 0;
+    position: relative;
+    /*padding-bottom: 20px;*/
 }
 
 .gap {
@@ -119,8 +163,9 @@
 
 .about-me-contents {
     font-size: 18px;
-    color: #eeeeee;
-
+    letter-spacing: 1px;
+    line-height: 2rem;
+    color: #F1F8FD;
 }
 
 .experience-contents,
@@ -138,33 +183,131 @@
 .awards-company-name {
     font-size: 25px;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: #FDB44B;
-    padding-bottom: 1rem;
+    padding-bottom: .4rem;
 }
 
 .exp-time-period,
 .educationp-time-period,
 .awards-time-period {
-    font-size: 16px;
-    color: #F1F8FD;
-    padding-bottom: 2rem;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    /*color: #F1F8FD;
+    padding-bottom: 2rem;*/
 }
 
 .exp-position,
 .education-subject,
 .awards-name {
     font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: #FDB44B;
-    padding-bottom: 1rem;
-    padding-left: 10px;
+    padding-bottom: .4rem;
+    /*padding-left: 10px;*/
 }
 
 .exp-desc,
 .education-desc,
 .awards-desc {
     font-size: 16px;
-    color: #F1F8FD;
-    padding-left: 10px;
-    padding-bottom: 1rem;
-    border-left: 2px solid #A5A3A3;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    border-left: 3px solid #A5A3A3;
+    padding-left: 5px;
+    /*color: #F1F8FD;
+    padding-bottom: 1rem;*/
+}
+
+/*Daqui em diante não estava no curso e não foi passado ou explicado*/
+
+/* Media queries */
+@media screen and (max-width:780px) {
+    .experience-contents,
+    .education-contents,
+    .awards-contents {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:780px) {
+    .left-section {
+        grid-column: span 3;
+    }
+    
+    .right-section {
+        grid-column: span 4;
+    }
+    
+}
+
+@media screen and (max-width:1200px) {
+    .resume-contents {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:390px) {
+    .resume-contents {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .profession {
+        font-size: 18px;
+    }
+
+    .left-title {
+        font-size: 18px;
+    }
+
+    .right-title {
+        font-size: 18px;
+    }
+
+    .contact-info ul li,
+    .references ul li {
+        font-size: 12px;
+    }
+
+    .contact-info ul li i,
+    .references ul li i {
+        /* padding-right: 1rem; */
+        font-size: 12px;
+    }
+
+    .skills ul li p {
+        font-size: 12px;
+    }
+
+    .about-me-contents {
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+
+    .exp-company-name,
+    .education-school-name,
+    .awards-company-name {
+        font-size: 18px;
+    }
+
+    .exp-time-period,
+    .educationp-time-period,
+    .awards-time-period {
+        font-size: 16px;
+    }
+
+    .exp-position,
+    .education-subject,
+    .awards-name {
+        font-size: 18px;
+    }
 }
