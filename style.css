@@ -108,6 +108,26 @@ body{
     /*padding: .1rem 0;*/
 }
 
+.contact-info ul li a {
+    padding: 10px 20px;  
+    align-items: center;
+    box-sizing: border-box;
+    border-left: 10px solid #70c7aa;
+    font-size: 20px;
+    background-color: #2d5a96;
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #70C6C7;   
+    /*color: #2E86C1; */
+    color: #edf1f3; 
+    transition: all 0.25s ease-in-out;
+}
+.contact-info ul li a:hover {
+  color: #252c30;  
+  background-color:#3c84e2;
+  font-weight: bold;
+}
 .skills ul {
     padding-top: 1.5rem;
 }
@@ -152,7 +172,7 @@ body{
     font-weight: bold;
     display: flex;
     align-items:center;
-    padding: 2rem 0;
+    padding: .5rem 0;
     position: relative;
     /*padding-bottom: 20px;*/
 }
@@ -170,7 +190,8 @@ body{
 
 .experience-contents,
 .education-contents,
-.awards-contents {
+.awards-contents,
+.certification-contents {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 2rem;
@@ -180,47 +201,63 @@ body{
 
 .exp-company-name,
 .education-school-name,
-.awards-company-name {
+.awards-company-name,
+.certification-company-name {
     font-size: 25px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #FDB44B;
     padding-bottom: .4rem;
+    padding-right: .4rem;
+    padding-top: 1rem;
 }
 
 .exp-time-period,
-.educationp-time-period,
-.awards-time-period {
+.education-time-period,
+.awards-time-period,
+.certification-time-period {
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 2rem;
-    /*color: #F1F8FD;
-    padding-bottom: 2rem;*/
+    /*color: #F1F8FD;*/
+    padding-bottom: 2rem;
 }
 
 .exp-position,
 .education-subject,
-.awards-name {
+.awards-name,
+.certification-name {
     font-size: 25px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #FDB44B;
     padding-bottom: .4rem;
-    /*padding-left: 10px;*/
+    padding-left: 10px;
+    padding-top: 1rem;
 }
 
 .exp-desc,
 .education-desc,
-.awards-desc {
+.awards-desc,
+.certification-desc {
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 1.5rem;
     border-left: 3px solid #A5A3A3;
-    padding-left: 5px;
-    /*color: #F1F8FD;
-    padding-bottom: 1rem;*/
+    padding-left: 10px;
+    /*color: #F1F8FD;*/
+    padding-bottom: .2rem;
+}
+
+.linkgithub{
+    color: rgb(0, 195, 255);
+    transition: all .25s ease-in-out;
+}
+.linkgithub:hover {
+    color: white;
+    font-weight: bold;
 }
 
 /*Daqui em diante não estava no curso e não foi passado ou explicado*/
@@ -310,4 +347,5 @@ body{
     .awards-name {
         font-size: 18px;
     }
+
 }
